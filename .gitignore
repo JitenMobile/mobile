@@ -36,3 +36,6 @@ fastlane/test_output
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+
+# macOS
+.DS_Store
