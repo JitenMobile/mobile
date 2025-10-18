@@ -1,41 +1,43 @@
-# Xcode
-#
-build/
-DerivedData/
-*.xcworkspace
-xcuserdata/
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# Swift Package Manager
-#
-.build/
-Packages/
-Package.resolved
+# dependencies
+node_modules/
 
-# CocoaPods
-#
-Pods/
-Podfile.lock
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
 
-# Carthage
-#
-Carthage/Build/
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
 
-# Fastlane
-#
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output
+# Metro
+.metro-health-check*
 
-# Bundler
-#
-.bundle/
-
-# Other
-#
-*.moved-aside
-*.xccheckout
-*.xcscmblueprint
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
 
 # macOS
 .DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+app-example
+
+# generated native folders
+/ios
+/android
