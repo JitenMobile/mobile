@@ -45,6 +45,7 @@ export default function TextEditor() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    width: "100%",
     justifyContent: "center",
     alignItems: "center",
   },
@@ -55,6 +56,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   actionStrip: {
-    marginBottom: 3,
+    // width: "100%",
   },
 });
