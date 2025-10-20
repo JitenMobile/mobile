@@ -1,4 +1,5 @@
 import { StyleProp, StyleSheet, View, ViewStyle } from "react-native";
+import { ThemedView } from "../themed-view";
 import { IconSymbol } from "../ui/icon-symbol.ios";
 
 const unSelectedColor = "gray";
@@ -9,7 +10,7 @@ const iconSize = 24;
 
 export default function EditActionStripe({ style }: { style?: StyleProp<ViewStyle> }) {
   return (
-    <View style={[localStyles.container, style]}>
+    <ThemedView style={[localStyles.container, style]}>
       <View style={localStyles.stripe}>
         <IconSymbol
           name="bold"
@@ -36,7 +37,7 @@ export default function EditActionStripe({ style }: { style?: StyleProp<ViewStyl
           weight={unSelectedWeight}
         />
       </View>
-    </View>
+    </ThemedView>
   );
 }
 
